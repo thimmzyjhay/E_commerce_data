@@ -4,19 +4,19 @@
 
 This project implements the design and deployment of an end‑to‑end data engineering pipeline using **the Olist OLTP dataset**.  
 Raw transactional data is ingested from **AWS S3** into a **Snowflake warehouse**, then transformed with **dbt** into analytics ready tables for reporting and advanced analytics.
-The objective is to convert raw operational data into a scalable analytical warehouse that supports business intelligence and data science use cases.
+The objective is to centralize raw operational data into a reliable analytics layer that improves visibility, reporting, and decision making across the organization and also reduces manual reporting effort and gives teams timely access to business insights.
 
 ### Source ERD
 <img width="583" height="372" alt="my raw schema" src="https://github.com/user-attachments/assets/7fd54541-9542-49f9-b553-8487152c3e98" />
 
 ## Problem Statement
-Brazil's e-commerce sector has grown rapidly, but companies face challenges in understanding customer behavior, logistics performance, and satisfaction drivers. The Olist dataset captures the full order lifecycle from purchase to delivery and review across thousands of sellers and customers nationwide.
+Olist e-commerce company generates large volumes of order, payment, delivery, and customer review data, but the data is often scattered and difficult to turn into actionable insight. As a result, teams struggle to identify delivery bottlenecks, understand what drives customer satisfaction, track payment behavior, and compare seller and product performance across regions.
 
-Without proper data integration and transformation, businesses cannot:
-- Identify bottlenecks in delivery times and freight costs.
-- Understand payment patterns and customer preferences.
-- Track customer satisfaction through reviews and ratings.
-- Evaluate seller and product performance across regions.
+Without a reliable data foundation, businesses cannot:
+- Spot delays and inefficiencies in the order to delivery process.
+- Understand customer buying and payment behavior.
+- Monitor satisfaction trends from review and rating data.
+- Evaluate seller and product performance to improve operations and growth.
 
 ## Project Architecture
 The pipeline demonstrates the architecture of a modern cloud native data stack, including:
